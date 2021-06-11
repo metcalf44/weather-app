@@ -2,16 +2,15 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const ForecastSummary = (props) => {
-    const ForecastSummary = (props) => {
         const {
             date,
             description,
             icon,
             temperature
         } = props;
-    }
+    
     return (
-        <div class="forecastSummary">
+        <div className="forecastSummary">
             <div className="forecast-summary__date">
                 {date}
             </div>
