@@ -1,5 +1,110 @@
 
+*, *::before, *::after {
+    box-sizing: border-box;
+    --btn: rgb(171, 215, 255);
+    --hover: rgb(126, 193, 255);
+} 
+
+.weather-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+    /* max-width: 1100px; */
+}
+
+.location-details {
+    font-size: 2rem;
+}
+
+.search-form {
+    margin-left: 1.2em;
+    width: fit-content;
+    border-radius: 10px;
+    box-shadow: 5px 6px 5px 0px rgba(117,117,117,0.57);
+}
+
+input {
+    font-size: 1.25rem;
+    padding: .25em .5em;
+    border-radius: 10px 0 0 10px;
+}
+
+.search-form button {
+    font-size: 1.25rem;
+    padding: .25em .5em;
+    border-radius: 0 10px 10px 0;
+    background: var(--btn);
+}
+
 .forecast-summaries {
     display: flex;
     justify-content: space-between;
+    margin: 2rem 0;
+    width: 100%;
+    max-width: 1000px;
 }
+
+.forecastSummary {
+    padding: 1em 0;
+    width: 18%;
+    text-align: center;
+    height: fit-content;
+    border: 1px rgb(0, 0, 0) solid;
+    border-radius: 10px;
+    box-shadow: 7px 6px 5px 0px rgba(117,117,117,0.57);
+}
+
+.forecast-summary__date {
+    font-weight: bold;
+    font-size: 1.25rem;
+    padding: .25em 0;
+    height: fit-content;
+}
+
+.forecast-summary__icon {
+    font-size: 1.75rem;
+    padding: .25em 0;
+}
+
+.forecast-summary__temperature {
+    font-size: 1.5rem;
+}
+
+.forecast-summary__description {
+    font-size: 1.25rem;
+    padding: .25em 0;
+}
+
+.forecastSummary button {
+    font-size: 1rem;
+    padding: .5em 1em;
+    margin-top: .5em;
+    border-radius: 25px;
+    background: var(--btn)
+}
+
+button:hover {
+    transform: scale(1.1);
+    background: var(--hover);
+}
+
+.forecast-details {
+    align-items: center;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.forecast-details__date {
+    font-weight: bold;
+}
+
+.forecast-details__date,
+.forecast-details__temperature,
+.forecast-details__humidity,
+.forecast-details__wind-speed {
+    font-size: 1.25rem;
+    padding-bottom: .25em;
+}
+
